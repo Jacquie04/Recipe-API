@@ -1,0 +1,55 @@
+body {
+    background-size: cover;
+    height: 100%;
+    overflow: scroll;
+    background-repeat: no-repeat;
+    background-color: lightslategray;
+
+}
+
+.top-bar-submenu {
+    text-align: center;
+    background: transparent !important;
+}
+
+.callout {
+    border: none; 
+    /* background-image: url("../images/agriculture-bunch-cooking-606540.jpg"); */
+    /* background-image: url("../images/apricot-background-berry-1028599.jpg"); */
+    background-image: url("../images/board-bunch-cooking-349609.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100% !important;
+    z-index: 0;
+    height: 125%;
+}
+
+
+#responsive-menu {
+    color: black;
+    font-weight: bold;
+    /* background: red; */
+    /* padding-top: 20px; */
+    position: relative;
+    bottom: 30px;
+    /* height: 20px;
+    width: 400px: */
+    
+}
+
+.menu-text {
+    color: black;
+    font-weight: bold;
+    /* background: pink; */
+}
+.top-bar-submenu {
+    color: black;
+    font-weight: bold;
+    background: yellow;
+}
+
+
+

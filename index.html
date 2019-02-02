@@ -6,41 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Recipe Site</title>
-    <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/style.css">
-
-
-    <style>
-        body {
-            background-size: cover;
-            height: 100%;
-            overflow: scroll;
-            background-repeat: no-repeat;
-        }
-      
-    </style>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body>
-    <br>
-    <div class="container">
-
-        <div class="jumbotron">
-            <h1 class="text-center">Recipe App</h1>
-
+    <div class="callout large secondary">
+        <div class="row column text-center">
+            <h1>Recipe API</h1>
+            <h2 class="subheader">Add text here</h2>
         </div>
-
-        <br>
-
-       
-
     </div>
-    <br>
-    
+
+
+    <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+        <div class="title-bar-title">Menu</div>
+    </div>
+
+    <div class="top-bar" id="responsive-menu">
+        <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">WHAT ARE YOU IN THE MOOD?</li>
+                <li class="has-submenu">
+                    <a href="#0">FOOD BYTES</a>
+                    <ul class="submenu menu vertical" data-submenu>
+                        <li><a id="chicken" href="#0">Chicken Dishes</a></li>
+                        <li><a id="steak" href="#0">Steak Dishes</a></li>
+                        <li><a id="fish" href="#0">Fish Dishes</a></li>
+                        <li><a id="veggie" href="#0">Veggie Dishes</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#0">DESSERT BYTES</a>
+                    <ul class="submenu menu vertical" data-submenu>
+                        <li><a id="chocolate" href="#0">Chocolate Desserts</a></li>
+                        <li><a id="pastries" href="#0">Pastries</a></li>
+                        <li><a id="cake" href="#0">Cakes</a></li>
+                        <li><a id="custards" href="#0">Custards</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x small-up-2 medium-up-1">
+            <div class="cell">
+                <div class="card">
+                    <img src="assets/img/generic/rectangle-1.jpg">
+                    <div class="card-section">
+                        <h4>This is for food</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="card">
+                    <img src="assets/img/generic/rectangle-1.jpg">
+                    <div class="card-section">
+                        <h4>This is for cocktails</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <table>
+        <thead>
+            <tr>
+                <th width="400">FOOD OR DESSERT BYTES</th>
+                <th>RECOMMENDED COCKTAIL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+           
+            </tr>
+        </tbody>
+    </table> -->
+
+
+
+
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./assets/app.js"></script>
+    <script src="assets/js/foundation.js"></script>
+    <!-- <script src="assets/css/app.js"></script> -->
+    <script type="text/javascript">
+        $(document).foundation();
+    </script>
 </body>
 
 </html>
