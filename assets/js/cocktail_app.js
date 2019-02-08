@@ -53,7 +53,7 @@ function displayDrinkInfo() {
             drinkDiv.append(drinkImage);
             drinkDiv.append(p);
 
-            $("#cocktails-display").append(drinkDiv);
+            $("#cocktails-display").prepend(drinkDiv);
 
 
         };
@@ -63,36 +63,4 @@ function displayDrinkInfo() {
 
 $('#responsive-menu .submenu .is-submenu-item').click(displayDrinkInfo);
 
-/* function renderDropDown() {
 
-$("#chicken")
-$("#steak")
-$("#fish")
-$("#veggie")
-$("#chocolate")
-$("#patries")
-$("#cake")
-$("#custards")
-
-}; */
-
-
-
-/*$(document).on("click", ".food-bytes", displayDrinkInfo);
-$(document).on("click", ".dessert-bytes", displayDrinkInfo);
-
-
-
-
-var cocktail = {
-    chicken = drink[4,5],
-    steak = drink [4,6],
-    fish = drink [0,7],
-    veggies = drink [1,3],
-    chocolate = drink [1,7],
-    pastries = drink [0,4],
-    cake = drink [1,2],
-    custards = drink [5,6],
-};
-
-renderDropDown();*/
