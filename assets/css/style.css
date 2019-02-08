@@ -14,9 +14,11 @@ body {
 .callout {
     border: none; 
     color: white;
-    background-image: url("../images/agriculture-bunch-cooking-606540.jpg");
+    /* background-image: url("../images/agriculture-bunch-cooking-606540.jpg"); */
+    background-image: url("../images/apps-internal\ \(2\).jpg");
     /* background-image: url("../images/apricot-background-berry-1028599.jpg"); */
     /* background-image: url("../images/board-bunch-cooking-349609.jpg"); */
+    height: 120px;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -26,6 +28,10 @@ body {
     z-index: 0;
     height: 125%;
     font-family: 'Fahkwang', sans-serif;
+}
+
+.img {
+    width: 100% !important;
 }
 
 
@@ -79,6 +85,7 @@ body {
     background: #125688;
     color: white;
   }
+
   
 .thumbnail {
   border: 1px solid #ddd;
