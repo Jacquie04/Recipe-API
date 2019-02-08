@@ -1,12 +1,12 @@
 $(document).ready(function () {
     //variable holding API Key     
-    var apiKey = "12a37fc09682cbc92a8a0e59fe7e5433";
-
+    var apiKey = "5416fd2c6a05fa9b36e973da43542029";
+    console.log(this);
     //To Give function to drop down
-    function searchFood(event) { 
+    function searchFood(event) {
         console.log(this);
-        var selectedFood = $(this).val();
-        var queryURL = "https://www.food2fork.com/api/search?key=" + apiKey + "&q=" + selectedFood + "&count=10";
+        var selectedFood = $(this).attr('data-value');
+        var queryURL = "https://www.food2fork.com/api/search?key=" + apiKey + "&q=" + selectedFood + "&count=5";
 
         $.ajax({
             url: queryURL,
@@ -18,7 +18,7 @@ $(document).ready(function () {
             var recipe = object.recipes;
             console.log(recipe);
             //for loop holding title, link and image of recipe
-           for (var i = 0; i< 10; i++) {
+           for (var i = 0; i< 5; i++) {
                 var foodDiv = $("<div class='food'>");
                 
                 var foodTitle = $("<p class='food-title'>").text(recipe[i].title);
@@ -50,9 +50,12 @@ $(document).ready(function () {
                 
         });
     }
+
     //updates #selectIngredients div to react to searchFood function
 
-    $('#selectIngredients').change(searchFood);
+    // $('#selectIngredient').change(searchFood);
+    $('#responsive-menu .submenu .is-submenu-item').click(searchFood);
+    
 
 
 

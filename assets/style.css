@@ -1,7 +1,15 @@
-body {
-    background-color: blueviolet;
-}
+
 
 .image {
     size: 1%;
+}
+
+.container1 {
+    float: left;
+    border-style: solid
+}
+
+.container2{
+    float:right;
+    border: solid;
 }
