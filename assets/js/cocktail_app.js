@@ -1,9 +1,3 @@
-var food = {
-    main: ["chicken", "steak", "fish", "veggies"],
-    desserts: ["chocolate", "pastries", "cake", "custards"],
-};
-
-
 function displayDrinkInfo() {
 
     var drink = ["vodka", "rum", "coffee", "tequila", "bourbon", "gin", "scotch", "brandy"];
@@ -29,7 +23,9 @@ function displayDrinkInfo() {
         };
 
     };
-    var queryURL = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?&i=" + drinkOptions($(this).text());
+
+    var queryURL = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?&i=" + drinkOptions($(this).attr("data-value"));
+
 
 
     $.ajax({
@@ -57,64 +53,38 @@ function displayDrinkInfo() {
             drinkDiv.append(drinkImage);
             drinkDiv.append(p);
 
-            $("#drink-image").prepend(drinkDiv);
+            $("#cocktails-display").append(drinkDiv);
 
 
         };
     });
 };
 
-function renderButtons() {
+
+$('#responsive-menu .submenu .is-submenu-item').click(displayDrinkInfo);
+
+/* function renderDropDown() {
+
+$("#chicken")
+$("#steak")
+$("#fish")
+$("#veggie")
+$("#chocolate")
+$("#patries")
+$("#cake")
+$("#custards")
+
+}; */
 
 
-    for (var i = 0; i < food.main.length; i++) {
 
-        var a = $("<button>");
-
-        a.addClass("btn");
-        a.addClass("btn-light");
-        a.addClass("main-btn");
-
-        a.attr("data-name", food.main[i]);
-
-        a.text(food.main[i]);
-
-
-        var b = $("<div>");
-        b.addClass("col-sm");
-        b.append(a);
-        $("#firstRow").append(b);
-
-    };
-
-    for (var i = 0; i < food.desserts.length; i++) {
-
-        var a = $("<button>");
-
-        a.addClass("btn");
-        a.addClass("btn-light");
-        a.addClass("dessert-btn");
-
-        a.attr("data-name", food.desserts[i]);
-
-        a.text(food.desserts[i]);
-
-
-        var b = $("<div>");
-        b.addClass("col-sm");
-        b.append(a);
-        $("#firstRow").append(b);
-
-    };
-};
-
-$(document).on("click", ".main-btn", displayDrinkInfo);
-$(document).on("click", ".dessert-btn", displayDrinkInfo);
+/*$(document).on("click", ".food-bytes", displayDrinkInfo);
+$(document).on("click", ".dessert-bytes", displayDrinkInfo);
 
 
 
 
-/*var cocktail = {
+var cocktail = {
     chicken = drink[4,5],
     steak = drink [4,6],
     fish = drink [0,7],
@@ -123,6 +93,6 @@ $(document).on("click", ".dessert-btn", displayDrinkInfo);
     pastries = drink [0,4],
     cake = drink [1,2],
     custards = drink [5,6],
-};*/
+};
 
-renderButtons();
+renderDropDown();*/
