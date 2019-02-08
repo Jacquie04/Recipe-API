@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Recipe Site</title>
+    <title>Booze Foodz</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -21,7 +21,7 @@
     <div class="callout large secondary">
         <div class="row column text-center">
             <h1 style="font-size: 500%;" font="font-weight: bold;">
-                <font color="white">Recipe API</font>
+                <font color="white">BOOZE FOODZ</font>
             </h1>
             <h2 class="subheader" style="font-size: 300%;">
                 <font color="white">What are you in the mood for?</font>
@@ -36,49 +36,51 @@
     </div>
 
     <!-- dropdown menu -->
-    <div class="top-bar" id="responsive-menu">
-        <div class="top-bar-left">
-            <ul class="dropdown menu" data-dropdown-menu>
-                <!-- <li class="menu-text">WHAT ARE YOU IN THE MOOD?</li> -->
-                <li class="has-submenu">
-                    <a href="#0">
-                        <font color="black"> FOOD BYTES</font>
-                    </a>
-                    <ul class="submenu menu vertical" data-submenu>
-                        <li><a id="chicken" href="#0">
-                                <font color="black">Chicken Dishes</font>
-                            </a></li>
-                        <li><a id="steak" href="#0">
-                                <font color="black">Steak Dishes</font>
-                            </a></li>
-                        <li><a id="fish" href="#0">
-                                <font color="black">Fish Dishes</font>
-                            </a></li>
-                        <li><a id="veggie" href="#0">
-                                <font color="black">Veggie Dishes</font>
-                            </a></li>
-                    </ul>
-                </li>
-                <li class="has-submenu">
-                    <a href="#0">
-                        <font color="black">DESSERT BYTES</font>
-                    </a>
-                    <ul class="submenu menu vertical" data-submenu>
-                        <li><a id="chocolate" href="#0">
-                                <font color="black">Chocolate Desserts</font>
-                            </a></li>
-                        <li><a id="pastries" href="#0">
-                                <font color="black">Pastries</font>
-                            </a></li>
-                        <li><a id="cake" href="#0">
-                                <font color="black">Cakes</font>
-                            </a></li>
-                        <li><a id="custards" href="#0">
-                                <font color="black">Custards</font>
-                            </a></li>
-                    </ul>
-                </li>
-            </ul>
+    <div id="selectIngredient">
+        <div class="top-bar" id="responsive-menu">
+            <div class="top-bar-left">
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <!-- <li class="menu-text">WHAT ARE YOU IN THE MOOD?</li> -->
+                    <li id="foods">
+                        <a href="#0">
+                            <font color="black"> FOOD BYTES</font>
+                        </a>
+                        <ul class="submenu menu vertical" data-submenu>
+                            <li data-value="chicken"><a id="chicken" href="#0">
+                                    <font color="black">Chicken Dishes</font>
+                                </a></li>
+                            <li data-value="steak"><a id="steak" href="#0">
+                                    <font color="black">Steak Dishes</font>
+                                </a></li>
+                            <li data-value="fish"><a id="fish" href="#0">
+                                    <font color="black">Fish Dishes</font>
+                                </a></li>
+                            <li data-value="veggie"><a id="veggie" href="#0">
+                                    <font color="black">Veggie Dishes</font>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#0">
+                            <font color="black">DESSERT BYTES</font>
+                        </a>
+                        <ul class="submenu menu vertical" data-submenu>
+                            <li data-value="chocolate"><a id="chocolate" href="#0">
+                                    <font color="black">Chocolate Desserts</font>
+                                </a></li>
+                            <li data-value="pastries"><a id="pastries" href="#0">
+                                    <font color="black">Pastries</font>
+                                </a></li>
+                            <li data-value="cake"><a id="cake" href="#0">
+                                    <font color="black">Cakes</font>
+                                </a></li>
+                            <li data-value="custards"><a id="custards" href="#0">
+                                    <font color="black">Custards</font>
+                                </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -106,24 +108,7 @@
         </div>
     </div>
 
-
-    <!-- <table>
-        <thead>
-            <tr>
-                <th width="400">FOOD OR DESSERT BYTES</th>
-                <th>RECOMMENDED COCKTAIL</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Content Goes Here</td>
-                <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-           
-            </tr>
-        </tbody>
-    </table> -->
-
-<!-- footer -->
+    <!-- footer -->
     <div id="engadget-footer-social-container">
         <footer id="engadget-footer-social">
             <div class="footer-left">
@@ -162,10 +147,6 @@
             </div>
         </footer>
     </div>
-
-
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/foundation.js"></script>
