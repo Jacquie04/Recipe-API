@@ -6,37 +6,30 @@ var food = {
 
 function displayDrinkInfo() {
 
+    var drink = ["vodka", "rum", "coffee", "tequila", "bourbon", "gin", "scotch", "brandy"];
 
-var option = $(this).text();
+    function drinkOptions(option) {
 
-var drink = ["vodka", "rum", "coffee", "tequila", "bourbon", "gin", "scotch", "brandy"];
+        if (option === "chicken") {
+            return drink[5];
+        } else if (option === "steak") {
+            return drink[4];
+        } else if (option === "fish") {
+            return drink[7];
+        } else if (option === "veggies") {
+            return drink[3];
+        } else if (option === "chocolate") {
+            return drink[1];
+        } else if (option === "pastries") {
+            return drink[0];
+        } else if (option === "cake") {
+            return drink[2];
+        } else if (option === "custards") {
+            return drink[6];
+        };
 
-var drinkSelector;
-
-function drinkOptions() {
-
-    if (option === "chicken") {
-        drinkSelector = drink[5];
-    } else if (option === "steak") {
-        drinkSelector = drink[4];
-    } else if (option === "fish") {
-        drinkSelector = drink[7];
-    } else if (option === "veggies") {
-        drinkSelector = drink[3];
-    } else if (option === "chocolate") {
-        drinkSelector = drink[1];
-    } else if (option === "pastries") {
-        drinkSelector = drink[0];
-    } else if (option === "cake") {
-        drinkSelector = drink[2];
-    } else if (option === "custards") {
-        drinkSelector = drink[6];
     };
-
-};
-    drinkOptions();
-
-     var queryURL = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?&i=" + drinkSelector;
+    var queryURL = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?&i=" + drinkOptions($(this).text());
 
 
     $.ajax({
@@ -67,8 +60,8 @@ function drinkOptions() {
             $("#drink-image").prepend(drinkDiv);
 
 
-        }; 
-    }); 
+        };
+    });
 };
 
 function renderButtons() {
