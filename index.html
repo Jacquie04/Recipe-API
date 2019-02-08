@@ -1,6 +1,5 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,30 +10,27 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/webicon.css">
     <link rel="stylesheet" href="assets/css/foundation-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:800|Nunito|Open+Sans+Condensed:300|Patua+One|Raleway|Secular+One" rel="stylesheet">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
-
 </head>
-
 <body>
     <div class="callout large secondary">
         <div class="row column text-center">
-            <h1 style="font-size: 500%;" font="font-weight: bold;">
-                <font color="white">Recipe API</font>
+            <h1 id="title" style="font-size: 500%;">
+                <font>BOOZE FOODZ</font>
             </h1>
-            <h2 class="subheader" style="font-size: 300%;">
-                <font color="white">What are you in the mood for?</font>
+            <h2  id="subtitle" class="subheader" style="font-size: 300%;">
+                <font>What are you in the mood for?</font>
             </h2>
         </div>
     </div>
-
     <!-- nav bar -->
     <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
         <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
         <div class="title-bar-title">Menu</div>
     </div>
-
     <!-- dropdown menu -->
     <div id="selectIngredient">
         <div class="top-bar" id="responsive-menu">
@@ -47,16 +43,16 @@
                         </a>
                         <ul class="submenu menu vertical" data-submenu>
                             <li data-value="chicken"><a id="chicken" href="#0">
-                                    <font color="black">Chicken Dishes</font>
+                                    <font color="black">Winner, Winner, Chicken Dinner</font>
                                 </a></li>
                             <li data-value="steak"><a id="steak" href="#0">
-                                    <font color="black">Steak Dishes</font>
+                                    <font color="black">One Man's Meat, Is Another Man's Poison</font>
                                 </a></li>
                             <li data-value="fish"><a id="fish" href="#0">
-                                    <font color="black">Fish Dishes</font>
+                                    <font color="black">Drink Like A Fish</font>
                                 </a></li>
                             <li data-value="veggie"><a id="veggie" href="#0">
-                                    <font color="black">Veggie Dishes</font>
+                                    <font color="black">Cool As A Cucumber</font>
                                 </a></li>
                         </ul>
                     </li>
@@ -66,16 +62,16 @@
                         </a>
                         <ul class="submenu menu vertical" data-submenu>
                             <li data-value="chocolate"><a id="chocolate" href="#0">
-                                    <font color="black">Chocolate Desserts</font>
+                                    <font color="black">There Is No "We" In Chocolate</font>
                                 </a></li>
                             <li data-value="pastries"><a id="pastries" href="#0">
-                                    <font color="black">Pastries</font>
+                                    <font color="black">Humble Pie</font>
                                 </a></li>
                             <li data-value="cake"><a id="cake" href="#0">
-                                    <font color="black">Cakes</font>
+                                    <font color="black">Take The Cake</font>
                                 </a></li>
                             <li data-value="custards"><a id="custards" href="#0">
-                                    <font color="black">Custards</font>
+                                    <font color="black">Milk Of Human Kindness</font>
                                 </a></li>
                         </ul>
                     </li>
@@ -83,7 +79,6 @@
             </div>
         </div>
     </div>
-
     <!-- container for food -->
     <div class="grid-container">
         <div class="grid-x grid-padding-x small-up-2 medium-up-1">
@@ -91,40 +86,21 @@
                 <div class="card">
                     <!-- <img src="assets/img/generic/rectangle-1.jpg"> -->
                     <div class="card-section">
-                        <h4 id="food">This is for food</h4>
+                        <h4 id="food">Man Does Not Live By Bread Alone!</h4>
                     </div>
                 </div>
             </div>
-
             <!-- container for cocktails -->
             <div class="cell">
                 <div class="card">
                     <!-- <img src="assets/img/generic/rectangle-1.jpg"> -->
                     <div class="card-section" id="cocktails-display">
-                        <h4>This is for cocktails</h4>
+                        <h4>Feeling Thirsty?</h4>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <!-- <table>
-        <thead>
-            <tr>
-                <th width="400">FOOD OR DESSERT BYTES</th>
-                <th>RECOMMENDED COCKTAIL</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Content Goes Here</td>
-                <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-           
-            </tr>
-        </tbody>
-    </table> -->
-
     <!-- footer -->
     <div id="engadget-footer-social-container">
         <footer id="engadget-footer-social">
@@ -132,7 +108,6 @@
                 <div class="newsletter">
                     <h6>Love food & drinks as much as us? Sign up for our newsletter</h6>
                     <div class="input-group">
-
                         <input class="input-group-field" type="email" placeholder="Email address">
                         <div class="input-group-button">
                             <input type="submit" class="button" value="Submit">
@@ -166,9 +141,6 @@
             </div>
         </footer>
     </div>
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/foundation.js"></script>
@@ -177,5 +149,4 @@
     </script>
     <script src="assets/js/cocktail_app.js"></script>
 </body>
-
 </html>

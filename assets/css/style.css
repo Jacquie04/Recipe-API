@@ -26,12 +26,39 @@ body {
     -o-background-size: cover;
     width: 100% !important;
     z-index: 0;
-    height: 125%;
-    font-family: 'Fahkwang', sans-serif;
+    height: auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+h4 {
+    font-family: 'Nunito', sans-serif;
+}
+
+#title {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+#subtitle {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: bold;
 }
 
 .img {
     width: 100% !important;
+}
+
+#foods {
+    font-family: 'Raleway', sans-serif;
+  
+}
+
+
+.has-submenu {
+    font-family: 'Raleway', sans-serif;
 }
 
 
