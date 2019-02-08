@@ -1,6 +1,6 @@
 $(document).ready(function () {
     //variable holding API Key     
-    var apiKey = "5416fd2c6a05fa9b36e973da43542029";
+    var apiKey = "3955712a4b398a2594e0f388e6361082";
     console.log(this);
     //To Give function to drop down
     function searchFood(event) {
@@ -56,12 +56,5 @@ $(document).ready(function () {
     // $('#selectIngredient').change(searchFood);
     $('#responsive-menu .submenu .is-submenu-item').click(searchFood);
     
-
-
-
-
-
-
-
 
 });
