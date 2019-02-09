@@ -6,6 +6,12 @@ body {
     background-color: lightslategray;
 }
 
+.trade {
+  font-size: 20px !important;
+  display: inline-block;
+  vertical-align: 139%;
+}
+
 .top-bar-submenu {
     text-align: center;
     background: transparent !important;
@@ -101,7 +107,7 @@ h4 {
     text-align: center;
 
   }
-  .food-link{
+  .food-link {
     text-align: center;
     border-bottom: solid;
     margin-left:28%;
@@ -120,7 +126,7 @@ h4 {
     border-color: snow;
     
   }
-  .paras{
+  .paras {
       text-align: center;
       font-style: oblique;
       font-weight: bolder;
@@ -248,6 +254,47 @@ h4 {
     padding-right: 0.625rem;
     padding-left: 0.625rem;
   }
+
+  @media only screen and (max-width: 640px) {
+    .booze {
+    font-size: 35px;
+
+
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+  .trade {
+    font-size: 10px !important;
+    display: inline-block;
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .what {
+    font-size: 15px;
+
+
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .food-image, .d-Image {
+      width: 150px;
+      height: 75px;
+
+
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .food-title, .food-pop, .food-link, .paras {
+      font-size: 10px;
+      text-align: center;
+      
+
+    }
+  }
   
   @media print, screen and (min-width: 40em) {
     #engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column {
@@ -335,6 +382,8 @@ h4 {
     padding-right: 0.625rem;
     padding-left: 0.625rem;
   }
+
+
   
   @media print, screen and (min-width: 40em) {
     #engadget-footer-social-container #engadget-footer-social .footer-left {
