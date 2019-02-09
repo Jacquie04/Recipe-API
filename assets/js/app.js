@@ -94,10 +94,10 @@ $(document).ready(function () {
         $result.text("");
       
         if (validateEmail(email)) {
-          $result.text(email + " is valid :)");
+          $result.text(email + " is valid. Expect more news from Booze Foodz! :)");
           $result.css("color", "green");
         } else {
-          $result.text(email + " is not valid :(");
+          $result.text(email + " is not valid. Please enter a valid email address :(");
           $result.css("color", "red");
         }
         return false;
