@@ -1,7 +1,8 @@
 $(document).ready(function () {
+
     //variable holding API Key     
-    var apiKey = "a87231fa9b7bca21fdeacef212f1bafa";
-    
+    var apiKey = "bf5228b5668d08c22117400f2cecc04e";
+
     //To Give function to drop down
     function searchFood(event) {
         console.log(this);
@@ -18,9 +19,9 @@ $(document).ready(function () {
             var recipe = object.recipes;
             console.log(recipe);
             //for loop holding title, link and image of recipe
-           for (var i = 0; i< 5; i++) {
+            for (var i = 0; i < 5; i++) {
                 var foodDiv = $("<div class='food'>");
-                
+
                 var foodTitle = $("<p class='food-title'>").text(recipe[i].title);
 
                 var foodImage = $("<img class='food-image'>").attr("src", recipe[i].image_url);
@@ -29,26 +30,26 @@ $(document).ready(function () {
 
                 var foodPopular = $("<p class='food-pop'>").text("Recipe Rating: " + recipe[i].social_rank + "/100")
 
-                
 
-                
-                
+
+
+
                 foodDiv.append(foodImage);
                 foodDiv.append(foodTitle);
                 foodDiv.append(foodPopular);
                 foodDiv.append(foodLink);
-                
-                
+
+
 
                 $("#food").prepend(foodDiv);
 
-           };
+            };
 
-            
-            
-            
 
-                
+
+
+
+
         });
     }
 
@@ -56,12 +57,35 @@ $(document).ready(function () {
 
     // $('#selectIngredient').change(searchFood);
     $('#responsive-menu .submenu .is-submenu-item').click(searchFood);
-    
- 
-    
-    
 
-    
+    var database;
+
+
+    var config = {
+        apiKey: "AIzaSyD4_23ODbw3YdQ-vXlePNcuQUDn6YJJwgw",
+        authDomain: "booze-foods-email-list.firebaseapp.com",
+        databaseURL: "https://booze-foods-email-list.firebaseio.com",
+        projectId: "booze-foods-email-list",
+        storageBucket: "booze-foods-email-list.appspot.com",
+        messagingSenderId: "217093824601"
+    };
+    firebase.initializeApp(config);
+    database = firebase.database();
+
+    function submitEmail() {
+  
+        var clientEmail = document.getElementById('email').value;
+        var newEmail = database.ref().child('Emails').push().key;
+         database.ref('Emails/'+newEmail+'email').set(clientEmail);
+        
+ 
+    }
+
+    $(".fire").click(submitEmail);
+
+
+
+   
 
 });
 
