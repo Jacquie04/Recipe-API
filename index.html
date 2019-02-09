@@ -110,13 +110,14 @@
                     <div class="newsletter">
                         <h6>Love food & drinks as much as us? Sign up for our newsletter</h6>
                         <div class="input-group">
-                            <input class="input-group-field" id="email" value="" type="email" placeholder="Email address">
+                            <input class="input-group-field" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" id="email" value="" type="email" placeholder="Email address">
                             <div class="input-group-button">
                                 <input type="submit" class="button fire" value="Submit">
                                 
                                 <input type="button" class="button" onclick="document.getElementById('email').value = ''" value="Clear">
                             </div>
                         </div>
+                        <h2 id='result'></h2>
                     </div>
                 </div>
                 <div class="footer-right">
