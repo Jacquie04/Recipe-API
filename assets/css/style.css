@@ -56,6 +56,83 @@ h4 {
   
 }
 
+.food {
+  height: 250px;
+}
+
+#food {
+  color: snow;
+}
+
+#thirst {
+  color: snow;
+}
+
+
+.drink-back {
+  background: url("../images/drinks.jpg");
+  background-size: contain;
+ }
+ 
+ .food-back {
+   background: url("../images/food.jpg");
+   background-size: contain;
+ }
+ 
+
+.food-image { 
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 175px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid;
+}
+
+  .food-title {
+    text-align: center;
+    font-style: oblique;
+    font-weight: bolder;
+    border-top: solid;
+  }
+  .food-pop {
+    text-align: center;
+
+  }
+  .food-link{
+    text-align: center;
+    border-bottom: solid;
+    margin-left:28%;
+    color: snow;
+  }
+  .d-Image {
+    position: relative;
+    float: left;
+    width:  300px;
+    height: 175px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    border:solid;
+    border-width: 2px;
+    border-color: snow;
+    padding-top: 2%;
+  }
+  .paras{
+      text-align: center;
+      font-style: oblique;
+      font-weight: bolder;
+      border-top: solid;
+      font-size: 50px;
+      color: snow;
+  }
+
+  .drinky {
+    height: 200px;
+  }
+
 
 .has-submenu {
     font-family: 'Raleway', sans-serif;

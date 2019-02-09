@@ -41,11 +41,11 @@ function displayDrinkInfo() {
         for (var i = 0; i < 5; i++) {
 
             var drinkDiv = $("<div>");
-            drinkDiv.addClass("col-sm");
+            drinkDiv.addClass("col-sm drinky");
 
-            var p = $("<p>").text("Cocktail " + response.drinks[i].strDrink);
+            var p = $("<p class='paras'>").text("Cocktail: " + response.drinks[i].strDrink);
 
-            var drinkImage = $("<img>");
+            var drinkImage = $("<img class='d-Image'>");
 
             drinkImage.attr("src", response.drinks[i].strDrinkThumb);
 
@@ -62,5 +62,3 @@ function displayDrinkInfo() {
 
 
 $('#responsive-menu .submenu .is-submenu-item').click(displayDrinkInfo);
-
-
