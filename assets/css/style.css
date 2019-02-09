@@ -6,6 +6,12 @@ body {
     background-color: lightslategray;
 }
 
+.trade {
+  font-size: 20px !important;
+  display: inline-block;
+  vertical-align: 139%;
+}
+
 .top-bar-submenu {
     text-align: center;
     background: transparent !important;
@@ -55,6 +61,83 @@ h4 {
     font-family: 'Raleway', sans-serif;
   
 }
+
+.food {
+  height: 250px;
+}
+
+#food {
+  color: snow;
+}
+
+#thirst {
+  color: snow;
+}
+
+
+.drink-back {
+  background: url("../images/drinks.jpg");
+  background-size: contain;
+ }
+ 
+ .food-back {
+   background: url("../images/food.jpg");
+   background-size: contain;
+ }
+ 
+
+.food-image { 
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 175px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid;
+}
+
+  .food-title {
+    text-align: center;
+    font-style: oblique;
+    font-weight: bolder;
+    border-top: solid;
+  }
+  .food-pop {
+    text-align: center;
+
+  }
+  .food-link {
+    text-align: center;
+    border-bottom: solid;
+    margin-left:28%;
+    color: snow;
+  }
+  .d-Image {
+    position: relative;
+    float: left;
+    width:  300px;
+    height: 175px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    border:solid;
+    border-width: 2px;
+    border-color: snow;
+    
+  }
+  .paras {
+      text-align: center;
+      font-style: oblique;
+      font-weight: bolder;
+      border-top: solid;
+      font-size: 50px;
+      color: snow;
+  }
+
+  .drinky {
+    height: 200px;
+  }
 
 
 .has-submenu {
@@ -171,6 +254,47 @@ h4 {
     padding-right: 0.625rem;
     padding-left: 0.625rem;
   }
+
+  @media only screen and (max-width: 640px) {
+    .booze {
+    font-size: 35px;
+
+
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+  .trade {
+    font-size: 10px !important;
+    display: inline-block;
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .what {
+    font-size: 15px;
+
+
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .food-image, .d-Image {
+      width: 150px;
+      height: 75px;
+
+
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .food-title, .food-pop, .food-link, .paras {
+      font-size: 10px;
+      text-align: center;
+      
+
+    }
+  }
   
   @media print, screen and (min-width: 40em) {
     #engadget-footer-sitemap-container #engadget-footer-sitemap .links > .link-column {
@@ -258,6 +382,8 @@ h4 {
     padding-right: 0.625rem;
     padding-left: 0.625rem;
   }
+
+
   
   @media print, screen and (min-width: 40em) {
     #engadget-footer-social-container #engadget-footer-social .footer-left {

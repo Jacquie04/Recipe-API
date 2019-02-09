@@ -1,7 +1,7 @@
 $(document).ready(function () {
     //variable holding API Key     
-    var apiKey = "0983c575d6b9abe6a0020f9edddf423c";
-    console.log(this);
+    var apiKey = "a87231fa9b7bca21fdeacef212f1bafa";
+    
     //To Give function to drop down
     function searchFood(event) {
         console.log(this);
@@ -32,10 +32,11 @@ $(document).ready(function () {
                 
 
                 
-                foodDiv.append(foodLink);
+                
                 foodDiv.append(foodImage);
                 foodDiv.append(foodTitle);
                 foodDiv.append(foodPopular);
+                foodDiv.append(foodLink);
                 
                 
 
@@ -55,6 +56,11 @@ $(document).ready(function () {
 
     // $('#selectIngredient').change(searchFood);
     $('#responsive-menu .submenu .is-submenu-item').click(searchFood);
+    
+ 
+    
+    
+
     
 
 });
